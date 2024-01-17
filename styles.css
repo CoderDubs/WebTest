@@ -12,14 +12,14 @@ li {
 /* Global Styles */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f7f7f7;
+    background-color: #b792c8;
     color: #333;
 }
 
 /* Header Styles */
 header {
-    background-color: #2d2d2d;
-    color: #fff;
+    background-color: #b792c8;
+    color: #000;
     padding: 20px;
     text-align: center;
 }
@@ -30,7 +30,7 @@ header h1 {
 
 /* Navigation Styles */
 nav {
-    background-color: #333;
+    background-color: #b792c8;
     padding: 10px 0;
 }
 
@@ -41,7 +41,7 @@ nav ul {
 
 nav a {
     text-decoration: none;
-    color: #fff;
+    color: #000;
     padding: 10px 20px;
     display: inline-block;
 }
@@ -58,7 +58,7 @@ main {
 }
 
 #home h2 {
-    color: #2d2d2d;
+    color: #000000;
     font-size: 2em;
     margin-bottom: 10px;
 }
@@ -70,7 +70,7 @@ main {
 }
 
 #about h2 {
-    color: #2d2d2d;
+    color: #000000;
     font-size: 2em;
     margin-bottom: 10px;
 }
@@ -82,7 +82,7 @@ main {
 }
 
 #products h2 {
-    color: #2d2d2d;
+    color: #000000;
     font-size: 2em;
     margin-bottom: 10px;
 }
@@ -94,15 +94,15 @@ main {
 }
 
 #contact h2 {
-    color: #2d2d2d;
+    color: #000000;
     font-size: 2em;
     margin-bottom: 10px;
 }
 
 /* Footer Styles */
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #000;
+    color: #b792c8;
     text-align: center;
     padding: 10px;
     position: fixed;

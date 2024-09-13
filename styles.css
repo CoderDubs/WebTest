@@ -1,111 +1,88 @@
-/* Reset some default styles */
-body,
-h1,
-h2,
-p,
-ul,
-li {
-    margin: 0;
-    padding: 0;
-}
-
-/* Global Styles */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #b792c8;
-    color: #333;
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    justify-content: center; /* Center content vertically */
+    align-items:center; /* Center content horizontally */
+    /*
+    
+    */
+    height: 100vh;
+    margin: 0;
+    background-color: #000; /* Fallback background color */
+    background-image: url('https://c4.wallpaperflare.com/wallpaper/675/310/349/audi-rs6-audi-rs6-avant-quattro-wallpaper-preview.jpg');
+    background-size: cover; /* Ensures the image covers the entire viewport */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+
+}
+header, footer {
+    margin: auto;
+    align-items: center; 
 }
 
-/* Header Styles */
-header {
-    background-color: #b792c8;
-    color: #000;
-    padding: 20px;
-    text-align: center;
+h1 {
+    font-size: 1.5em;
+    /*margin: 0;*/
+    margin: auto;
 }
 
-header h1 {
-    font-size: 2.5em;
-}
-
-/* Navigation Styles */
-nav {
-    background-color: #b792c8;
-    padding: 10px 0;
-}
-
-nav ul {
-    list-style-type: none;
-    text-align: center;
-}
-
-nav a {
-    text-decoration: none;
-    color: #000;
-    padding: 10px 20px;
-    display: inline-block;
-}
-
-/* Main Content Styles */
 main {
-    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
 }
 
-/* Home Section Styles */
-#home {
-    text-align: center;
-    margin-bottom: 30px;
+/* Style the section to be a flex container */
+#form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em; /* Adds space between elements */
+    max-width: 600px; /* Optional: limits the width of the form */
+    margin: 0 auto; /* Centers the form horizontally */
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 8px;
 }
 
-#home h2 {
-    color: #000000;
-    font-size: 2em;
-    margin-bottom: 10px;
-}
-
-/* About Us Section Styles */
-#about {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-#about h2 {
-    color: #000000;
-    font-size: 2em;
-    margin-bottom: 10px;
-}
-
-/* Our Crystals Section Styles */
-#products {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-#products h2 {
-    color: #000000;
-    font-size: 2em;
-    margin-bottom: 10px;
-}
-
-/* Contact Section Styles */
-#contact {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-#contact h2 {
-    color: #000000;
-    font-size: 2em;
-    margin-bottom: 10px;
-}
-
-/* Footer Styles */
-footer {
-    background-color: #000;
-    color: #b792c8;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
+/* Ensure the form elements take full width */
+#form input[type="text"],
+#form input[type="file"],
+#form textarea {
     width: 100%;
+    box-sizing: border-box; /* Ensures padding and borders are included in width */
 }
+
+/* Style the buttons */
+#form button {
+    padding: 0.5em 1em;
+    margin: 0.5em 0;
+    border: none;
+    border-radius: 4px;
+    color: #ccc;
+    cursor: pointer;
+}
+
+
+/* Optional: Hover effect for buttons */
+#form button:hover {
+    opacity: 0.8;
+}
+
+/* Navigation Styles 
+.nav-list {
+    list-style-type: none;
+    margin: auto;
+}
+.nav-list li {
+    margin-right: 20px;
+}
+.nav-list li:last-child {
+    margin-right: 0;
+}
+.nav-list a { 
+    color: #1ae5f7;
+}
+.nav-list a:hover {
+    color: #6b1dca;
+}
+*/

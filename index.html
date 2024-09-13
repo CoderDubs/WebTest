@@ -2,62 +2,53 @@
 <html lang="en">
 
 <head>
+    <title>FindTheRide</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wicked Moon Crystals</title>
+    <meta name="description" content="Discover an extensive collection of cars, share and download custom builds and connect with other enthusiasts.">
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
-    <!-- Header Section -->
     <header>
-        <h1>Wicked Moon Crystals</h1>
-        <p>Your source for magical crystals</p>
+        <h1>FindTheRide</h1>
     </header>
-
-    <!-- Navigation Section -->
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#products">Our Crystals</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <!-- Main Content Section -->
+    
     <main>
-        <!-- Home Section -->
-        <section id="home">
-            <h2>Welcome to Wicked Moon Crystals</h2>
-            <p>Discover the magic within our exquisite collection of crystals.</p>
-        </section>
+        <!-- FORM TO UPLOAD/SHARE YOUR CARS -->
+        <section id="form">
+            <h2>Add A Ride</h2>
+            <form action="#" method="post">
+                <div>
+                    <label for="selectYear">Select Year:</label>
+                    <select id="year" name="year" required>
+                        <!-- Options will be populated by JavaScript -->
+                    </select>
+        
+                    <label for="selectModel">Select Car Model:</label>
+                    <select id="model" name="model" required>
+                        <!-- Options will be populated by JavaScript -->
+                    </select>
+                    
+                <div>
+                    <label for="description">Description:</label>
+                    <textarea id="description" name="description" rows="15" cols="50" placeholder="Enter your detailed description here..."></textarea>
+                </div>
 
-        <!-- About Us Section -->
-        <section id="about">
-            <h2>About Us</h2>
-            <p>Learn about our passion for crystals and our commitment to providing quality and magical products.</p>
-        </section>
-
-        <!-- Our Crystals Section -->
-        <section id="products">
-            <h2>Our Crystals</h2>
-            <p>Explore our enchanting selection of crystals, each with its unique energy and beauty.</p>
-            <!-- Add crystal images and descriptions here -->
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                
+                    <!-- Under Construction
+                    <label for="specs">Under Construction:</label>
+                    <input type="file" id="specs" name="specs">
+                    -->
+            </form>
         </section>
     </main>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Reach out to us for inquiries, orders, or any crystal-related questions.</p>
-        <!-- Add a contact form or contact details here -->
-    </section>
-
-    <!-- Footer Section -->
     <footer>
-        <p>&copy; 2024 Wicked Moon Crystals. All rights reserved.</p>
+        <p>FindTheRide&copy;</p>
     </footer>
 </body>
-
 </html>

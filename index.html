@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <title>FindTheRide</title>
     <meta charset="UTF-8">
@@ -9,44 +8,52 @@
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
-
 <body>
     <header>
         <h1>FindTheRide</h1>
     </header>
-    
     <main>
         <!-- FORM TO UPLOAD/SHARE YOUR CARS -->
-        <section id="form">
+        <section id="carForm">
             <h2>Add A Ride</h2>
-            <form action="#" method="post">
-                <div>
-                    <label for="selectYear">Select Year:</label>
-                    <select id="year" name="year" required>
-                        <!-- Options will be populated by JavaScript -->
-                    </select>
-        
-                    <label for="selectModel">Select Car Model:</label>
-                    <select id="model" name="model" required>
-                        <!-- Options will be populated by JavaScript -->
-                    </select>
+            <form action="#" method="post" enctype="multipart/form-data">
                     
-                <div>
-                    <label for="description">Description:</label>
-                    <textarea id="description" name="description" rows="15" cols="50" placeholder="Enter your detailed description here..."></textarea>
-                </div>
+                    <label for="carPic">Upload Image:</label>
+                    <input type="file" id="carPic" name="carPic" accept=".jpg, .jpeg, .png">
 
+                    <label for="make">Make:</label>
+                    <input type="text" id="make" name="make" placeholder="Car make">
+
+                    <label for="model">Model:</label>
+                    <input type="text" id="model" name="model" placeholder="Car model">
+
+                    <label for="year">Year:</label>
+                    <input type="number" id="year" name="year" placeholder="Car year">
+                    
+                    <br>
+                    <br>
+                    <label for="carDescription">Car Features:</label>
+                    <div>
+                    <textarea id="description" name="description" rows="10" cols="50" placeholder="Please describe your ride!"></textarea>
+                    </div>
+                    
+                    <div>
                     <button type="submit">Submit</button>
-                    <button type="reset">Reset</button>
-                
-                    <!-- Under Construction
-                    <label for="specs">Under Construction:</label>
-                    <input type="file" id="specs" name="specs">
-                    -->
+                    <button type="delete">Delete</button>
+                    </div>
             </form>
+
+            <script>
+                function submitForm(e) {
+                    // prevent refresh↓
+                    // Handle the form submission with JavaScript
+                    console.log('Form submitted via JavaScript');
+                }
+                </script>
+
         </section>
     </main>
-
+    
     <footer>
         <p>FindTheRide&copy;</p>
     </footer>
